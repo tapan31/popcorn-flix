@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, Autoplay, Pagination } from "swiper/modules";
+import { Scrollbar, Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,12 +24,14 @@ export default () => {
 
   return (
     <section className={styles.container}>
+      <h2>Now Playing</h2>
       <Swiper
-        modules={[Scrollbar, Autoplay, Pagination]}
+        modules={[Scrollbar, Autoplay, Pagination, Navigation]}
         spaceBetween={10}
         slidesPerView={1}
         loop={true}
         grabCursor={true}
+        navigation={true}
         pagination={{
           clickable: true,
           enabled: false,

@@ -1,7 +1,16 @@
 .container {
   max-width: 90rem;
-  padding: 0 2rem;
-  margin: 3rem auto;
+  padding: 3rem;
+  margin: auto;
+  background: url("showcase-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .myPaginationBullet {

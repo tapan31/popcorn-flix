@@ -24,3 +24,12 @@ body {
   /* padding: 1.5rem; */
   max-width: 100%;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f4f4f4;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+}
