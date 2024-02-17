@@ -32,7 +32,7 @@ function TvShowsProvider({ children }) {
         `${BASE_URL}/trending/tv/week?api_key=${API_KEY}`
       );
       const data = await res.json();
-      console.log(data.results);
+      // console.log(data.results);
       setTrendingTvShows(
         data.results
           .sort((a, b) => b.vote_average - a.vote_average)
@@ -50,7 +50,7 @@ function TvShowsProvider({ children }) {
       setIsLoading(true);
       const res = await fetch(`${BASE_URL}/tv/${id}?api_key=${API_KEY}`);
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setTvShow(data);
     } catch (error) {
       console.log(error.message);

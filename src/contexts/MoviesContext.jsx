@@ -39,7 +39,7 @@ function MoviesProvider({ children }) {
         `${BASE_URL}/trending/movie/week?api_key=${API_KEY}`
       );
       const data = await res.json();
-      console.log(data.results);
+      // console.log(data.results);
       setTrendingMovies(
         data.results
           .sort((a, b) => b.vote_average - a.vote_average)
@@ -59,7 +59,7 @@ function MoviesProvider({ children }) {
         `${BASE_URL}/movie/now_playing?api_key=${API_KEY}`
       );
       const data = await res.json();
-      console.log(data.results);
+      // console.log(data.results);
       setNowPlayingMovies(
         data.results.sort((a, b) => b.vote_average - a.vote_average)
       );
@@ -75,7 +75,7 @@ function MoviesProvider({ children }) {
       setIsLoading(true);
       const res = await fetch(`${BASE_URL}/movie/${id}?api_key=${API_KEY}`);
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setMovie(data);
     } catch (error) {
       console.log(error.message);

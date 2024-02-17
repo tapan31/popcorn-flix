@@ -16,7 +16,7 @@ function SearchProvider({ children }) {
         `${BASE_URL}/search/multi?query=${query}&api_key=${API_KEY}`
       );
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setSearchResults(
         data.results
           .filter(

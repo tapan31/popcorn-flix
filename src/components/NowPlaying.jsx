@@ -62,8 +62,6 @@ export default () => {
           delay: 2000,
           disableOnInteraction: false,
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {nowPlayingMovies.map((movie) => (
           <SwiperSlide key={movie.id}>

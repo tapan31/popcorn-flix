@@ -11,7 +11,6 @@ function TrendingMovies() {
 
   useEffect(() => {
     getTrendingMovies();
-    console.log("Hello");
   }, []);
 
   if (isLoading) return <Spinner />;
