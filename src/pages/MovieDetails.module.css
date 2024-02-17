@@ -1,0 +1,60 @@
+.container {
+  max-width: 70rem;
+  width: 100%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.main {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.main .imgContainer {
+  width: 40%;
+}
+
+.main img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.main .details {
+  width: 60%;
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.main .lead {
+  font-size: 1.1rem;
+}
+
+.main span {
+  font-weight: bold;
+}
+
+.main p {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main .imgContainer {
+    width: 100%;
+  }
+
+  .main .details {
+    width: 100%;
+  }
+}

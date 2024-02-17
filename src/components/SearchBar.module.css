@@ -1,0 +1,46 @@
+.form {
+  /* background-color: red; */
+  padding: 0 0.5rem;
+  width: 50%;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #f4f4f4;
+  color: #f4f4f4;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+
+  .form input {
+    padding: 0.4rem;
+  }
+}

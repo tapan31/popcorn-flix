@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #f4f4f4;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.5rem 0.5rem;
+}

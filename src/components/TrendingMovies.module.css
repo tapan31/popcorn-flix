@@ -1,0 +1,19 @@
+.container {
+  max-width: 90rem;
+  margin: auto;
+  padding: 3rem;
+}
+
+.container h2 {
+  margin: 1rem 0;
+}
+
+.moviesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 2rem;
+}
+
+.moviesContainer h3 {
+  font-size: 1rem;
+}
