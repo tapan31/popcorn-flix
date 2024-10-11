@@ -11,7 +11,7 @@ function MovieList() {
 
   useEffect(() => {
     getPopularMovies();
-    console.log("Hello");
+    // console.log("Hello");
   }, [getPopularMovies]);
 
   if (isLoading) return <Spinner />;

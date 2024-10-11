@@ -12,7 +12,7 @@ function SearchResults() {
   const { searchResults, isLoading, getSearchResults } = useSearch();
   const navigate = useNavigate();
   const query = searchParams.get("query");
-  console.log(`Query: ${query}`);
+  // console.log(`Query: ${query}`);
 
   useEffect(() => {
     getSearchResults(query);

@@ -11,7 +11,7 @@ function TrendingTvShows() {
 
   useEffect(() => {
     getTrendingTvShows();
-    console.log("Hello");
+    // console.log("Hello");
   }, []);
 
   return (
